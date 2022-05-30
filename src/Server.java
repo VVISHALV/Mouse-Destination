@@ -34,7 +34,7 @@ public class Server {
                 try {
                     x = in.readInt();
                     y = in.readInt();
-                    md.setMouse(x, y);
+                   // md.setMouse(x, y);
                     System.out.println(x + " " + y);
 
                 } catch (IOException i) {
