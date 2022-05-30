@@ -30,10 +30,12 @@ public class Server {
 
             int x = 0;
             int y = 0;
+            String line="";
             while (true) {
                 try {
-                    x = in.readInt();
-                    y = in.readInt();
+                    line=in.readUTF();
+                    x = Integer.parseInt(line.split(" ")[0]);
+                    y = Integer.parseInt(line.split(" ")[1]);
                    // md.setMouse(x, y);
                     System.out.println(x + " " + y);
 
